@@ -1,6 +1,11 @@
+Perfect 👍
+Main tumhare content ko proper GitHub README.md format me structure karke de raha hoon — clean headings, badges-ready structure, copy-paste friendly markdown ke saath.
+
+Tum isse directly README.md me paste kar sakte ho.
+
 🚀 Profile Card Generator
 
-A modern, fully responsive Profile Card Generator built with Next.js (App Router) + TypeScript + Tailwind CSS.
+A modern, fully responsive Profile Card Generator built with Next.js (App Router), TypeScript, and Tailwind CSS.
 
 This application allows users to:
 
@@ -107,17 +112,17 @@ profile-card-generator/
 └── package.json
 
 ⚙️ Installation & Setup
-1️⃣ Clone the repository
+1️⃣ Clone the Repository
 git clone https://github.com/your-username/profile-card-generator.git
 cd profile-card-generator
 
-2️⃣ Install dependencies
+2️⃣ Install Dependencies
 npm install
 
-3️⃣ Install required export libraries
+3️⃣ Install Required Export Libraries
 npm install html-to-image jspdf react-icons
 
-4️⃣ Run development server
+4️⃣ Run Development Server
 npm run dev
 
 
@@ -130,13 +135,13 @@ http://localhost:3000
 
 State is stored in page.tsx
 
-ProfileForm updates state
+ProfileForm updates the state
 
-ProfilePreview reads from same state
+ProfilePreview reads from the same state
 
 React automatically re-renders preview on every change
 
-Single source of truth = clean architecture.
+✅ Single source of truth = clean architecture
 
 📷 Image Export
 
@@ -150,7 +155,7 @@ Triggers automatic browser download
 
 Converts DOM to image
 
-Inserts into jsPDF
+Inserts image into jsPDF
 
 Auto-scales to fit page
 
@@ -186,7 +191,7 @@ Touch-friendly buttons
 
 Smooth scaling interactions
 
-🔥 Future Improvements (Optional)
+🔥 Future Improvements
 
 Shareable link with encoded profile data
 
