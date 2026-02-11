@@ -1,36 +1,209 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Profile Card Generator
 
-## Getting Started
+A modern, fully responsive Profile Card Generator built with Next.js (App Router) + TypeScript + Tailwind CSS.
 
-First, run the development server:
+This application allows users to:
 
-```bash
+Fill in personal details (name, role, bio, image, address, social links)
+
+See a live preview of their profile card while editing
+
+Download the profile card as:
+
+📷 PNG Image
+
+📄 PDF File
+
+Experience smooth animations, glassmorphism UI, gradients, hover effects, and responsive design
+
+✨ Features
+🧾 Dynamic Form
+
+Full Name
+
+Professional Role
+
+Bio
+
+Address
+
+Profile Image Upload (Base64 Preview)
+
+Social Links (LinkedIn, GitHub, Twitter)
+
+👀 Live Preview
+
+Real-time updates while typing
+
+Modern gradient card design
+
+Glassmorphism effect
+
+Responsive layout
+
+Social icons with hover animations
+
+📥 Export Options
+
+Download as PNG (using html-to-image)
+
+Download as PDF (using jsPDF)
+
+Auto-scale for clean export
+
+Print-friendly styles
+
+🎨 Modern UI/UX
+
+Tailwind CSS styling
+
+Gradient backgrounds
+
+Soft blur glass cards
+
+Hover, tap, and click animations
+
+Mobile-first responsive layout
+
+Smooth transitions and micro-interactions
+
+🛠️ Tech Stack
+
+Next.js 14+ (App Router)
+
+TypeScript
+
+Tailwind CSS
+
+html-to-image
+
+jsPDF
+
+react-icons
+
+📂 Project Structure
+profile-card-generator/
+│
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   │
+│   ├── components/
+│   │   ├── ProfileForm.tsx
+│   │   ├── ProfilePreview.tsx
+│   │   └── GenerateButtons.tsx
+│   │
+│   ├── types/
+│   │   └── profile.ts
+│   │
+│   └── utils/
+│       ├── exportAsImage.ts
+│       └── exportAsPDF.ts
+│
+├── tailwind.config.ts
+├── tsconfig.json
+└── package.json
+
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/your-username/profile-card-generator.git
+cd profile-card-generator
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Install required export libraries
+npm install html-to-image jspdf react-icons
+
+4️⃣ Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Now open:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+🧠 How It Works
+🔁 Live Preview Logic
 
-To learn more about Next.js, take a look at the following resources:
+State is stored in page.tsx
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ProfileForm updates state
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ProfilePreview reads from same state
 
-## Deploy on Vercel
+React automatically re-renders preview on every change
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Single source of truth = clean architecture.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📷 Image Export
+
+Uses html-to-image
+
+Converts referenced DOM element to PNG
+
+Triggers automatic browser download
+
+📄 PDF Export
+
+Converts DOM to image
+
+Inserts into jsPDF
+
+Auto-scales to fit page
+
+Downloads PDF file
+
+🎨 UI Design System
+
+Gradient theme: Indigo → Purple → Pink
+
+Glassmorphism card design
+
+Soft shadow layering
+
+Responsive breakpoints
+
+Hover scale effects
+
+Click press animations
+
+Fade-in transitions
+
+Accessible color contrast
+
+📱 Responsive Design
+
+Mobile-first layout
+
+Stacked layout on small screens
+
+Two-column layout on desktop
+
+Touch-friendly buttons
+
+Smooth scaling interactions
+
+🔥 Future Improvements (Optional)
+
+Shareable link with encoded profile data
+
+Multiple card themes
+
+Dark mode toggle
+
+QR code generator
+
+Save to localStorage
+
+Drag & reposition elements
+
+Card template switcher
+
+📌 Requirements
+
+Node.js 18+
+
+npm or yarn
